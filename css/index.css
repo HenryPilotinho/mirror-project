@@ -35,12 +35,22 @@ header{
 .menu-opcoes a{
     color: #003366;
 }
+.menu-opcoes a :hover{
+    color: #007DC6;
+}
+.menu-opcoes a :active{
+    color: #7cfc00;
+}
 .container{
     margin: 0 auto;
     width: 940px;
 }
 .busca input[type=search] {
     width: 210px;
+}
+.busca{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .busca button{
     background-image: url(/img/busca.png);
@@ -77,6 +87,18 @@ header{
     color: #333333;
     text-decoration: none;
 }
+.menu-departamentos li ul{
+    display: none;
+}
+.menu-departamentos li:hover ul{
+    display: block;
+}
+.menu-departamentos ul ul li{
+    background-color: #dcdcdc;
+}
+.menu-departamentos li li a:before {
+    content: '- ';
+}
 .item-menu{
     text-decoration: none;
 }
@@ -84,6 +106,8 @@ header{
     margin: 10px 0;
     padding: 10px;
     width: 445px;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 4px #999;
 }
 .painel li{
     display: inline-block;
@@ -92,11 +116,19 @@ header{
     margin: 2px;
     padding-bottom: 10px;
 }
+.painel li:hover{
+    box-shadow: 0 0 5px #333;
+    transition: box-shadow 0.7s;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.2) rotate(-5deg);
+    
+}
 .painel h2{
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
 }
 .painel a{
     color: #333;
@@ -107,11 +139,13 @@ header{
 .novidades{
     float: left;
     background-color: #f5dcdc;
+    background: linear-gradient(#f5dcdc,#bebef4);
 
 }
 .mais-vendidos{
     float: right;
     background-color: #dcdcf5;
+    background: linear-gradient(#dcdcf5,#f4bebe);
 }
 footer{
     background-image: url(/img/fundo-rodape.png);

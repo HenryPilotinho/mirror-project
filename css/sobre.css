@@ -15,6 +15,15 @@ p{
     padding: 0 45px;
     text-indent: 15px;
 }
+p::first-letter{
+    font-weight: bold;
+}
+p::first-line{
+    font-variant: small-caps;
+}
+h1 + p{
+    text-indent: -10px;
+}
 figure {
     background-color: #F2EDED;
     border: 1px solid #ccc;
