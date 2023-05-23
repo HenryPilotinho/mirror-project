@@ -78,7 +78,11 @@ label[for=azul]::after{
     border: 6px solid rgba(0, 0, 0, 0, 0.1);
 }
 @media (min-width: 630px) {
-   .produto {
+    img{
+    float: left;
+    }
+    
+    .produto {
     position: relative;
     padding-left: 40%;
     font-size: 1.2em;
@@ -90,7 +94,7 @@ label[for=azul]::after{
    .cores legend{
     position: static;
    }
-   .core label img{
+   .cores label img{
     position: absolute;
     top: 0;
     left: 0;
