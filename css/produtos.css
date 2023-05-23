@@ -113,3 +113,9 @@ fieldset{
     min-width: 240px;
     width: 40%;
 }
+header{
+    height: 85px;
+}
+footer{
+    height: 50px;
+}
