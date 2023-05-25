@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/produtos.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=PT+Sans|Bad+script'>
 </head>
 <body>
     <header class="container"> 
@@ -49,7 +50,9 @@
                         </fieldset>
                         <fieldset class="tamanhos">
                             <legend>Escolha o tamanho</legend>
-                            <input type="range" min="36" max="46" value="42" step="2" name="tamanho">
+                            <input type="range" min="36" max="46" value="42" step="2" name="tamanho"
+                            oninput="mostarTamanho.value=value" onchange="mostarTamanho.value=value">
+                            <input type="text" id="mostrarTamanho" value="42" disabled>
                         </fieldset>
                         <button class="comprar">Comprar</button>
                     </form>
