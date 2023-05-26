@@ -7,7 +7,7 @@ header{
     position: relative;
 }
 .sacola{
-    background-image: url(/img/sacola.png);
+    background-image: url(../img/sacola.png);
     background-repeat: no-repeat;
     background-position: top right;
     font-size: 14px;
@@ -53,7 +53,7 @@ header{
     border-top-right-radius: 10px;
 }
 .busca button{
-    background-image: url(/img/busca.png);
+    background-image: url(../img/busca.png);
     background-repeat: no-repeat;
     border: none;
     width: 20px;
@@ -87,18 +87,16 @@ header{
     color: #333333;
     text-decoration: none;
 }
-.menu-departamentos li ul{
+.menu-departamentos ul li ul li{
     display: none;
 }
-.menu-departamentos li:hover ul{
+.menu-departamentos ul li:hover ul li{
     display: block;
 }
 .menu-departamentos ul ul li{
     background-color: #dcdcdc;
 }
-.menu-departamentos li li a:before {
-    content: '- ';
-}
+
 .item-menu{
     text-decoration: none;
 }
@@ -149,7 +147,7 @@ header{
     background: linear-gradient(#dcdcf5,#f4bebe);
 }
 footer{
-    background-image: url(/img/fundo-rodape.png);
+    background-image: url(../img/fundo-rodape.png);
     clear: both;
     padding: 20px 0;
 }
@@ -172,13 +170,13 @@ footer  .container{
     text-indent: -9999px;
 }
 .social a[href*="facebook.com"]{
-    background-image: url(/img/facebook.png);
+    background-image: url(../img/facebook.png);
 }
 .social a[href*="twitter.com"]{
-    background-image: url(/img/twitter.png);
+    background-image: url(../img/twitter.png);
 }
 .social a[href*="plus.google.com"]{
-    background-image: url(/img/googleplus.png);
+    background-image: url(../img/googleplus.png);
 }
 .painel li:nth-child(n+7){
     display: none;
